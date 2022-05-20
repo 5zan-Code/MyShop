@@ -4,11 +4,21 @@ import Rating from '../Components/Rating'
 
 const Product = ({ product }) => {
   return (
+<<<<<<< HEAD
     <>
       <Card className="my-3 p-3 rounded ">
         <a href={`/product/${product._id}`}>
           <Card.Img src={product.image} variant="top" />
         </a>
+=======
+    <Card className= 'my-3 p-3 rounded '>
+       <a href={`/product/${product._id}`}>
+           <Card.Img src={product.image} variant='top'/>
+         
+
+           
+       </a>
+>>>>>>> c2ccb48984428f2dea8e96a60d1635d6856c8e01
 
         <Card.Body>
           <a href={`/product/${product._id}`}>
