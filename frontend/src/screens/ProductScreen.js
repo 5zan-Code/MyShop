@@ -11,7 +11,7 @@ const ProductScreen = () => {
   useEffect(() => {
     
     const fetchProduct = async ( ) => {
-      const { data } = await axios.get(`/api/products/${id}`)
+      const { data } = await axios.get(`/api/product/${id}`)
  
       setProduct(data)
     }
@@ -66,7 +66,7 @@ const ProductScreen = () => {
                 <Button
                   className="btn-block"
                   type="button"
-                  disabled={product.countInStock == 0}
+                  disabled={product.countInStock === 0}
                 >
                   Add to Cart
                 </Button>

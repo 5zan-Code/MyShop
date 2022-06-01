@@ -5,14 +5,14 @@ import Product from "../Components/Product";
 
 const HomeScreen = () => {
   const [products, setProduct] = useState([])
- 
+
   useEffect(() => {
     
     const fetchProduct = async ( ) => {
-      const { data } = await axios.get(`/api/products`)
- 
+      const { data } = await axios.get('/api/products')
+      
       setProduct(data)
-      console.log(data)
+      
     }
  
     fetchProduct()
