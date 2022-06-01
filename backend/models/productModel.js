@@ -30,7 +30,7 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    band: {
+    brand: {
       type: String,
       required: true,
     },
