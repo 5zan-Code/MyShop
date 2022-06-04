@@ -4,9 +4,10 @@ import PropTypes from 'prop-types'
 
 
 const Rating = ({ value, numReviews, color }) => {
-  
+ 
   return (
     <div className="rating">
+      {console.log(value, numReviews, color)}
       <span>
         <i style={{color}}
           className={

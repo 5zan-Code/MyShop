@@ -6,6 +6,7 @@ import Rating from "../Components/Rating";
 const Product = ({ product }) => {
   return (
     <>
+    
       <Card className="my-3 p-3 rounded ">
         <Link to={`/product/${product._id}`}>
           <Card.Img src={product.image} variant="top" />
@@ -31,6 +32,7 @@ const Product = ({ product }) => {
       </Card>
     </>
   );
+  
 };
 
 export default Product;
