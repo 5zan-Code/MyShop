@@ -13,6 +13,7 @@ const ProductScreen = () => {
     const fetchProduct = async ( ) => {
       const { data } = await axios.get(`/api/product/${id}`)
       setProduct(data)
+     
     }
  
     fetchProduct()
@@ -20,7 +21,7 @@ const ProductScreen = () => {
 
   return (
     <>
-    {console.log('product name from product screen -> ',product.name)}
+    
       <Link className="btn btn-light my-3" to="/">
         GO BACK
       </Link>

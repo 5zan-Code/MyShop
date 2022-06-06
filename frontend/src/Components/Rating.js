@@ -7,7 +7,8 @@ const Rating = ({ value, numReviews, color }) => {
  
   return (
     <div className="rating">
-      {console.log(value, numReviews, color)}
+      {console.log('value from rating ',value)}
+  
       <span>
         <i style={{color}}
           className={
